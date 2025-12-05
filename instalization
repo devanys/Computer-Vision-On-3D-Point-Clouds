@@ -1,0 +1,6 @@
+openni2.initialize()
+dev = openni2.Device.open_any()
+color_stream = dev.create_color_stream()
+depth_stream = dev.create_depth_stream()
+color_stream.start()
+depth_stream.start()
